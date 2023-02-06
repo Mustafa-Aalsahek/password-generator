@@ -9,23 +9,17 @@ background: linear-gradient(302deg, rgba(255,255,255,1) 0%, rgba(149,255,253,0.7
 }
 
 #container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
     text-align: center;
+    flex-direction: column;
     
   }
 
+ 
   /*  Headline  */
 
-  .stroke {
-    -webkit-text-stroke-width: 1px;
-    -moz-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #111827;
-    -moz-text-stroke-color: #111827;
-    color: transparent;
-  }
-  
-  .shadow {
-    text-shadow: 2px 4px #0076de;
-  }
   body p {
     font-size: 5vw;
     font-weight: bold;
@@ -36,11 +30,13 @@ background: linear-gradient(302deg, rgba(255,255,255,1) 0%, rgba(149,255,253,0.7
 
   #password{
     box-sizing: border-box;
-  border: 2px solid #ccc;
+  border: 2px solid #dddd;
   border-radius: 4px;
-  background-color: #f8f8f8;
+  background-color: transparent;
   font-size: 16px;
   resize: none;
+  padding-left: 5px;
+  padding-top: 5px;
   }
 
 
@@ -113,6 +109,8 @@ background: linear-gradient(302deg, rgba(255,255,255,1) 0%, rgba(149,255,253,0.7
     transform: translate(0rem, 0);
   }
 }
+
+/*  Button  */
 button.btn {
   text-transform: uppercase;
   text-decoration: none;
@@ -172,3 +170,49 @@ button.btn:hover::before {
   top: 0.5rem;
   left: 0.35rem;
 }
+
+.text-wrap {
+  position:relative ;
+  padding: 2px;
+}
+#submit {
+  border: 2px solid #5ea0da;
+  background-color: #5ea0da;
+  line-height: 10px;
+  color: #ffffff;
+  padding: 0;
+  text-align: center;
+  border-radius: 200px;
+  font-size: 10px;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+    top: 1em;
+    right: 1em;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+}
+#submit:focus {
+  outline: 0;
+}
+#submit:hover {
+  
+  color: #0076de;
+  outline: 0;
+}
+#submit:active {
+  font-size: 10px;
+  outline: 0;
+}
+
+#submit.done, #submit.done:hover {
+  background-color: #5ea0da;
+  color: #fff;
+  font-family: "FontAwesome";
+  font-size: 15px;
+  top: 0.7em;
+  right: 0.7em;
+  /*position: relative;*/
+}
+

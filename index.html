@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'>
+
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
 <body>
     <div id="container">
-          <p class="stroke shadow">Password Generator</p>
+          <p class="headline">Password Generator</p>
         
         <form>
           
@@ -74,10 +77,17 @@
           <span id="length-display"></span>
           <br><br>
            <button class="btn" type="button" onclick="generatePassword()">Generate</button>
-        </form>
+          </form>
         <br><br>
-        <textarea id="password" rows="3" cols="32" disabled></textarea>
+        <div class="text-wrap">
+        <textarea id="password" rows="2" cols="42" style="display: table-cell; vertical-align: middle;"
+        contenteditable="true">
+        </textarea>
+          <input type="submit" role="submit" value="copy" id="submit"/>
+        </div>
+      
       </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src="app.js"></script>
 </body>
 </html>
