@@ -213,6 +213,7 @@ button.btn:hover::before {
   font-size: 15px;
   top: 0.7em;
   right: 0.7em;
+  transition: all 0.5s ease-in-out;
   /*position: relative;*/
 }
 
